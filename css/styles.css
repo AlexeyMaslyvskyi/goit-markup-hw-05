@@ -83,6 +83,20 @@ header {
 .nav-links .link.current {
   color: var(--accent);
 }
+.link {
+  position: relative;
+}
+li .current::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -2px;
+  border-radius: 2px;
+  background-color: var(--accent);
+}
 .contacts-header {
   display: flex;
   align-items: center;
@@ -281,9 +295,16 @@ section.our-works {
 .works {
   display: flex;
 }
+.work-img {
+  position: relative;
+}
 .works > li:not(:last-child) {
   margin-right: 30px;
 }
+.descrip {
+  position: absolute;
+}
+
 /*4sec-main*/
 .team {
   background-color: var(--memberbgc);
