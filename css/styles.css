@@ -43,6 +43,9 @@ header {
 .list {
   list-style: none;
 }
+.conteiner {
+  max-width: 1200px;
+}
 .page-header .conteiner {
   display: flex;
   align-items: center;
