@@ -75,8 +75,7 @@ header {
   letter-spacing: 0.02em;
 
   color: var(--text);
-  transition-duration: 250ms;
-  transition-timing-function: (0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-links .link:hover,
@@ -132,8 +131,7 @@ li .current::after {
 
   color: var(--grey);
   fill: var(--grey);
-  transition-duration: 250ms;
-  transition-timing-function: (0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-header a:hover,
@@ -167,7 +165,7 @@ li .current::after {
   color: var(--accent);
 }
 .conteiner {
-  width: 1200px;
+  max-width: 1200px;
 
   margin: 0 auto;
   padding: 0 15px;
@@ -225,8 +223,7 @@ li .current::after {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: (0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover {
   background: var(--focus);
@@ -403,8 +400,8 @@ section.our-works {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--icons);
   border-radius: 50%;
-  transition-duration: 250ms;
-  transition-timing-function: (0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:hover,
@@ -438,8 +435,7 @@ section.our-works {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  transition-duration: 250ms;
-  transition-timing-function: (0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -478,8 +474,8 @@ section.our-works {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: (0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters button:hover,
 .filters button:focus {
@@ -497,8 +493,7 @@ section.our-works {
 }
 .shadow {
   display: block;
-  transition-duration: 250ms;
-  transition-timing-function: (0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .shadow:focus,
 .shadow:hover {
@@ -611,8 +606,7 @@ footer div[addresf] {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   fill: var(--white);
-  transition-duration: 250ms;
-  transition-timing-function: (0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .soc-link:hover,
 .soc-link:focus,
@@ -649,6 +643,7 @@ a.logo-footer {
   /* or 171% */
 
   color: var(--white);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail,
 .phone {
@@ -660,8 +655,8 @@ a.logo-footer {
   /* or 171% */
 
   color: rgba(255, 255, 255, 0.6);
-  transition-duration: 250ms;
-  transition-timing-function: (0.4, 0, 0.2, 1);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-footer a:hover,
 .contacts-footer a:focus {
@@ -689,7 +684,8 @@ a.logo-footer {
   background-color: rgba(47, 48, 58, 0.4);
   opacity: 1;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   visibility: hidden;
